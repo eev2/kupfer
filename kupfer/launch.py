@@ -19,6 +19,7 @@ try:
     Wnck.set_client_type(Wnck.ClientType.PAGER)
     if "WAYLAND_DISPLAY" in os.environ:
         Wnck.Screen.get_default = lambda *_x: None
+    Wnck = None # Always launch new instance
 
 except ImportError as e:
     from kupfer.support import pretty
