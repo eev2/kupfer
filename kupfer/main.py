@@ -179,7 +179,7 @@ def _browser_start(quiet: bool) -> None:
     from gi.repository import Gdk, GLib
 
     # program name; propagated to WM_NAME, WM_CLASS
-    GLib.set_prgname("Kupfer")
+    GLib.set_prgname("kupfer")
 
     if not Gdk.Screen.get_default():  #pylint: disable=no-value-for-parameter
         print("No Screen Found, Exiting...", file=sys.stderr)
