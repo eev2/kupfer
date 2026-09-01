@@ -24,6 +24,7 @@ try:
 except ImportError as e:
     pretty.print_info(__name__, "Disabling window tracking:", e)
     Wnck = None
+Wnck = None # Always launch new instance
 
 from kupfer import config, desktop_launch
 from kupfer.core import settings
